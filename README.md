@@ -58,16 +58,16 @@ Core domain logic of the application.
 ## 2. Application
 Defines the use cases and application logic.
 
-- **`application/dto`**: Data Transfer Objects (DTOs) for input/output operations.
-- **`application/service`**: Application services orchestrating business operations.
-- **`application/exception`**: Application-specific exceptions.
+- **`app/dto`**: Data Transfer Objects (DTOs) for input/output operations.
+- **`app/service`**: Application services orchestrating business operations.
+- **`app/exception`**: Application-specific exceptions.
 
 ## 3. Infrastructure
 Technical implementations and integrations.
 
-- **`infrastructure/config`**: Spring and security configuration.
-- **`infrastructure/persistence`**: Database repositories & integrations.
-- **`infrastructure/messaging`**: Messaging components (e.g., Kafka, RabbitMQ).
+- **`infra/config`**: Spring and security configuration.
+- **`infra/persistence`**: Database repositories & integrations.
+- **`infra/messaging`**: Messaging components (e.g., Kafka, RabbitMQ).
 
 ## 4. Web
 Handles HTTP interactions and the API layer.
