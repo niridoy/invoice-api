@@ -47,3 +47,22 @@ Handles HTTP interactions and the API layer.
 Contains unit and integration tests.
 
 - **`tests`**: Organized tests to validate application functionality.
+
+# Tests Summary Table
+
+| **Layer**                | **Feature Test** | **Unit Test** | **Skip/Partial** |
+|--------------------------|------------------|---------------|------------------|
+| **Domain**               | ✅               | ✅            |                  |
+| **Application**          | ✅               | ✅            |                  |
+| **Infrastructure**       | ✅ (e.g., DB, messaging) | ✅ (for utilities) | Config, unless complex |
+| **Web**                  | ✅               | ✅ (controllers) |                  |
+| **Simple DTOs/Utilities**|                  | ✅ (if complex) | ✅ (if trivial)  |
+
+---
+
+## Key Recommendations
+
+1. **Focus testing on business logic (domain and application layers).**
+2. **Write integration tests for persistence, messaging, and APIs.**
+3. **Minimize or skip tests for boilerplate configuration and simple data classes.**
+
