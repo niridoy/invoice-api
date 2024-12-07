@@ -1,6 +1,6 @@
 # invoice-api
 
-
+# For Large Scale
 ## 1. Domain
 The core domain logic of the application.
 
@@ -47,6 +47,38 @@ Handles HTTP interactions and the API layer.
 Contains unit and integration tests.
 
 - **`tests`**: Organized tests to validate application functionality.
+# For medium & small scale
+## 1. Domain
+Core domain logic of the application.
+
+- **`domain/model`**: Core domain models (entities and value objects).
+- **`domain/repository`**: Repository interfaces for data access.
+- **`domain/service`**: Domain services encapsulating business logic.
+
+## 2. Application
+Defines the use cases and application logic.
+
+- **`application/dto`**: Data Transfer Objects (DTOs) for input/output operations.
+- **`application/service`**: Application services orchestrating business operations.
+- **`application/exception`**: Application-specific exceptions.
+
+## 3. Infrastructure
+Technical implementations and integrations.
+
+- **`infrastructure/config`**: Spring and security configuration.
+- **`infrastructure/persistence`**: Database repositories & integrations.
+- **`infrastructure/messaging`**: Messaging components (e.g., Kafka, RabbitMQ).
+
+## 4. Web
+Handles HTTP interactions and the API layer.
+
+- **`web/controller`**: REST controllers for HTTP requests.
+- **`web/dto`**: Request/Response objects for API interactions.
+
+## 5. Tests
+Unit and integration tests.
+
+- **`tests`**: Organized tests to validate functionality.
 
 # Tests Summary Table
 
